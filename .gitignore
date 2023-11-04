@@ -20,3 +20,7 @@ picoboot.elf.map
 picoboot.hex
 *.uf2
 picoboot.pio.h
+
+# Nix, direnv
+.envrc
+.direnv
