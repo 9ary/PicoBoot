@@ -2,9 +2,9 @@
  ;
  ; SPDX-License-Identifier: GPL-2.0-only
 
-.define PUBLIC PIN_CLK     5    ; EXI clock signal
-.define PUBLIC PIN_CS      4    ; U10 chip select
-.define PUBLIC PIN_DI      6    ; MISO data output
+.define PUBLIC PIN_CLK     22    ; EXI clock signal
+.define PUBLIC PIN_CS      28    ; U10 chip select
+.define PUBLIC PIN_DI      27    ; MISO data output
 
 .program on_transfer
 
