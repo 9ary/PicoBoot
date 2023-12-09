@@ -12,10 +12,6 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
     systems.flake = false;
-    pico-sdk = {
-      url = "github:raspberrypi/pico-sdk";
-      flake = false;
-    };
   };
 
   outputs = { ... } @ inputs: inputs.flake-parts.lib.mkFlake {
@@ -40,6 +36,7 @@
             , cmake
             , gcc-arm-embedded
             , python3
+            , pico-sdk
             }: mkShell {
               name = "picoboot";
               nativeBuildInputs = [
@@ -49,7 +46,7 @@
               ];
 
               env = {
-                PICO_SDK_PATH="${inputs.pico-sdk}";
+                PICO_SDK_PATH="${pico-sdk}/lib/pico-sdk";
               };
             })
             { };

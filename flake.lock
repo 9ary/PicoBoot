@@ -52,28 +52,11 @@
         "type": "github"
       }
     },
-    "pico-sdk": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1686695253,
-        "narHash": "sha256-JNcxd86XNNiPkvipVFR3X255boMmq+YcuJXUP4JwInU=",
-        "owner": "raspberrypi",
-        "repo": "pico-sdk",
-        "rev": "6a7db34ff63345a7badec79ebea3aaef1712f374",
-        "type": "github"
-      },
-      "original": {
-        "owner": "raspberrypi",
-        "repo": "pico-sdk",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "flake-compat": "flake-compat",
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
-        "pico-sdk": "pico-sdk",
         "systems": "systems"
       }
     },
